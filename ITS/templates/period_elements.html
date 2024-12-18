@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elements in {{ period_name }}</title>
+</head>
+<body>
+    <h1>Elements in {{ period_name }}</h1>
+
+    {% if period_elements_list %}
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Atomic Number</th>
+                <th>Atomic Weight</th>
+            </tr>
+            {% for element in period_elements_list %}
+            <tr>
+                <td>{{ element.name }}</td>
+                <td>{{ element.hasSymbol[0] if hasattr(element, 'hasSymbol') else "N/A" }}</td>
+                <td>{{ element.hasAtomicNumber[0] if hasattr(element, 'hasAtomicNumber') else "N/A" }}</td>
+                <td>{{ element.hasAtomicWeight[0] if hasattr(element, 'hasAtomicWeight') else "N/A" }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No elements found in this period.</p>
+    {% endif %}
+
+    <br><br>
+    <a href="/">Back to Search</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+Element,AtomicNumber,AtomicWeight,Symbol,Group,Period
+Hydrogen,1,1.008,H,Nonmetal,1
+Helium,2,4.0026,He,Noble Gas,1
+Lithium,3,6.94,Li,Alkali Metal,2
+Beryllium,4,9.0122,Be,Alkaline Earth Metal,2
+Boron,5,10.81,B,Metalloid,2
+Carbon,6,12.011,C,Nonmetal,2
+Nitrogen,7,14.007,N,Nonmetal,2
+Oxygen,8,15.999,O,Nonmetal,2
+Fluorine,9,18.998,F,Halogen,2
+Neon,10,20.180,Ne,Noble Gas,2
+Sodium,11,22.990,Na,Alkali Metal,3
+Magnesium,12,24.305,Mg,Alkaline Earth Metal,3
+Aluminum,13,26.982,Al,Post-Transition Metal,3
+Silicon,14,28.085,Si,Metalloid,3
+Phosphorus,15,30.974,P,Nonmetal,3
+Sulfur,16,32.06,S,Nonmetal,3
+Chlorine,17,35.45,Cl,Halogen,3
+Argon,18,39.948,Ar,Noble Gas,3
+Potassium,19,39.098,K,Alkali Metal,4
+Calcium,20,40.078,Ca,Alkaline Earth Metal,4

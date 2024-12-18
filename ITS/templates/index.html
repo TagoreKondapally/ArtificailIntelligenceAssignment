@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Intelligent Tutoring System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Inline Styles for this page -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f4f7fb;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #3f5c69;
+            color: white;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.1);
+            padding-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .sidebar-header h3 {
+            font-weight: 500;
+            font-size: 1.8em;
+            color: #fff;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-nav li {
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar-nav li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1.1em;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar-nav li a:hover {
+            background-color: #5d6a73;
+        }
+
+        /* Main Content Area */
+        .content {
+            margin-left: 250px;
+            padding: 30px;
+            width: calc(100% - 250px);
+            background-color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #3f5c69;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #3f5c69;
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+
+        /* Paragraphs */
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin-bottom: 15px;
+        }
+
+        /* Links */
+        a {
+            text-decoration: none;
+            color: #3f5c69;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #a1c6c1;
+        }
+
+        /* Intro Section */
+        .intro {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        /* Sidebar Toggle on Small Screens */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-top: 15px;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .sidebar-header h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Activities</h3>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/search">Element Search</a></li>
+            <li><a href="/group_elements">Group Elements</a></li>
+            <li><a href="/same_group_elements">Same Group Elements</a></li>
+            <li><a href="/quiz">Take a Quiz</a></li>
+            <li><a href="/feedback">FeedBack</a></li>
+
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <h1>Welcome to the Intelligent Tutoring System</h1>
+
+        <div class="intro">
+            <h2>About the Subject: Periodic Table</h2>
+            <p>
+                The Periodic Table of Elements is one of the most fundamental concepts in chemistry. It organizes all the chemical elements based on their atomic number, electron configuration, and recurring chemical properties.
+            </p>
+            <p>
+                This Intelligent Tutoring System is designed to help learners understand the periodic table's structure, the properties of elements, and how different elements are categorized. It provides tools such as quizzes and group element search features to engage and educate users interactively.
+            </p>
+            <h2>About Ontology</h2>
+            <p>
+                Ontology in this system refers to the structured knowledge representation of elements, their properties, and relationships in the periodic table. It helps in organizing information in a way that the system can understand and assist learners better by offering tailored feedback.
+            </p>
+            <h2>About the Tool</h2>
+            <p>
+                This system is built using a Python Flask framework and utilizes web technologies such as HTML, CSS, and JavaScript. The system provides dynamic user interaction and is powered by structured data from an ontology of the periodic table.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

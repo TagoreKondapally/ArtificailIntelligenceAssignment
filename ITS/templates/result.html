@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Quiz - Results</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+            padding: 40px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        .result-item {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .result-item strong {
+            color: #007bff;
+        }
+
+        .btn-back {
+            font-size: 1.1rem;
+            color: #007bff;
+            border: 2px solid #007bff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .btn-back:hover {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #3f5c69;
+            color: white;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.1);
+            padding-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .sidebar-header h3 {
+            font-weight: 500;
+            font-size: 1.8em;
+            color: #fff;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-nav li {
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar-nav li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1.1em;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar-nav li a:hover {
+            background-color: #5d6a73;
+        }
+
+    </style>
+</head>
+
+<body>
+     <!-- Sidebar -->
+     <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Activities</h3>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/search">Element Search</a></li>
+            <li><a href="/group_elements">Group Elements</a></li>
+            <li><a href="/same_group_elements">Same Group Elements</a></li>
+            <li><a href="/quiz">Take a Quiz</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Results for {{ element_name }}</h1>
+        
+        <div class="result-item">
+            <strong>Symbol:</strong> {{ symbol }}
+        </div>
+        <div class="result-item">
+            <strong>Atomic Number:</strong> {{ atomic_number }}
+        </div>
+        <div class="result-item">
+            <strong>Atomic Weight:</strong> {{ atomic_weight }}
+        </div>
+        <div class="result-item">
+            <strong>Group:</strong> {{ group }}
+        </div>
+        <div class="result-item">
+            <strong>Period:</strong> {{ period }}
+        </div>
+        <div class="result-item">
+            <strong>Feedback:</strong> {{ feedback }}
+        </div>
+        
+        <!-- Button to return to the search page -->
+        <a href="/" class="btn-back">Back to Search</a>
+    </div>
+
+    <!-- Footer Text -->
+    <div class="footer-text">
+        <p>&copy; 2024 Periodic Table Quiz. All rights reserved.</p>
+    </div>
+</body>
+</html>

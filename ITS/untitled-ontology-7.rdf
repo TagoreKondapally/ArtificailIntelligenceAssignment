@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7/"
+     xml:base="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-7="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#belongsToGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#belongsToGroup">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#belongsToPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#belongsToPeriod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#hasAtomicNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#hasAtomicNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#hasAtomicWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#hasAtomicWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#hasSymbol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#hasSymbol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Group"/>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#AlkaliMetals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#AlkaliMetals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Chlorine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Chlorine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <untitled-ontology-7:belongsToGroup rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Halogens"/>
+        <untitled-ontology-7:belongsToPeriod rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period3"/>
+        <untitled-ontology-7:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</untitled-ontology-7:hasAtomicNumber>
+        <untitled-ontology-7:hasAtomicWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.45</untitled-ontology-7:hasAtomicWeight>
+        <untitled-ontology-7:hasSymbol>Cl</untitled-ontology-7:hasSymbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Flourine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Flourine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <untitled-ontology-7:belongsToGroup rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Halogens"/>
+        <untitled-ontology-7:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</untitled-ontology-7:hasAtomicNumber>
+        <untitled-ontology-7:hasAtomicWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.998</untitled-ontology-7:hasAtomicWeight>
+        <untitled-ontology-7:hasSymbol>F</untitled-ontology-7:hasSymbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Halogens -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Halogens">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Helium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Helium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <untitled-ontology-7:belongsToGroup rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#NobleGases"/>
+        <untitled-ontology-7:belongsToPeriod rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period1"/>
+        <untitled-ontology-7:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-7:hasAtomicNumber>
+        <untitled-ontology-7:hasAtomicWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0026</untitled-ontology-7:hasAtomicWeight>
+        <untitled-ontology-7:hasSymbol>He</untitled-ontology-7:hasSymbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Hydrogen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Hydrogen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <untitled-ontology-7:belongsToGroup rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Nonmetals"/>
+        <untitled-ontology-7:belongsToPeriod rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period1"/>
+        <untitled-ontology-7:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-7:hasAtomicNumber>
+        <untitled-ontology-7:hasAtomicWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.008</untitled-ontology-7:hasAtomicWeight>
+        <untitled-ontology-7:hasSymbol>H</untitled-ontology-7:hasSymbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Iron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Iron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <untitled-ontology-7:belongsToGroup rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period4"/>
+        <untitled-ontology-7:belongsToGroup rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#TransitionMetals"/>
+        <untitled-ontology-7:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</untitled-ontology-7:hasAtomicNumber>
+        <untitled-ontology-7:hasAtomicWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">55.845</untitled-ontology-7:hasAtomicWeight>
+        <untitled-ontology-7:hasSymbol>Fe</untitled-ontology-7:hasSymbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#NobleGases -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#NobleGases">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Nonmetals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Nonmetals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Sodium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Sodium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Element"/>
+        <untitled-ontology-7:belongsToGroup rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#AlkaliMetals"/>
+        <untitled-ontology-7:belongsToPeriod rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Period3"/>
+        <untitled-ontology-7:hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</untitled-ontology-7:hasAtomicNumber>
+        <untitled-ontology-7:hasAtomicWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.99</untitled-ontology-7:hasAtomicWeight>
+        <untitled-ontology-7:hasSymbol>Na</untitled-ontology-7:hasSymbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#TransitionMetals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#TransitionMetals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/divya/ontologies/2024/11/untitled-ontology-7#Group"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
